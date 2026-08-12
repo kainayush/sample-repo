@@ -1,0 +1,16 @@
+{
+  "name": "feeder-watch",
+  "version": "1.0.0",
+  "description": "Smart Meter Analytics for LT Line Break Detection",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "simulator": "cd backend && npm run simulator",
+    "build": "cd backend && npm run build && cd ../frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
